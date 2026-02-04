@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loppis – Saker till salu</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: #2f855a;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 { margin: 0; }
+    header p { margin-top: 0.5rem; }
+
+    main {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background: #ddd;
+    }
+    
+
+    .card-content {
+      padding: 1rem;
+      flex: 1;
+    }
+
+    .card-content h2 {
+      font-size: 1.1rem;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #2f855a;
+      margin-bottom: 0.5rem;
+    }
+
+    .status {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #666;
+    }
+
+    .contact {
+      background: #edf2f7;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Robs_Surplus
+    </h1>
+    <p>Saker till salu – först till kvarn 😊</p>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h2>Kontakt</h2>
+      <p>Intresserad? Hör av dig via:</p>
+      <ul>
+        <li>E-post: <strong>eriti01@gmail.com</strong></li>
+        <li>Telefon / SMS: <strong>0708-886063</strong></li>
+      </ul>
+      <p>Upphämtning enligt överenskommelse.</p>
+    </section>
+
+    <section class="grid">
+      <!-- EXEMPEL PÅ ANNONS -->
+      <div class="card">
+        <img src="bilder/gjutjarnsfonster.jpg" alt="gjutjärnsfönster" />
+        <div class="card-content">
+          <h2>gjutjarnsfonster</h2>
+          <div class="price">1300 kr</div>
+          <p>Hel, Vacker, Antik, rostig. mått: b130cm h150cm</p>
+          <div class="status">Status: Till salu</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="bilder/fotogenlampa.jpg" alt="fotoigenlampa" />
+        <div class="card-content">
+          <h2>fotogenlampa</h2>
+          <div class="price">150 kr</div>
+          <p>Något defekt. Veken fastnat Retro‑stil.</p>
+          <div class="status">Status: till salu</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="bilder/schackklocka.jpg" alt="schackklocka" />
+        <div class="card-content">
+          <h2>schackklocka</h2>
+          <div class="price">200 kr</div>
+          <p>Går inte igång men om du är händig kan du fixa den.</p>
+          <div class="status">Status: Till salu</div>
+        </div>
+      </div>
+      <!-- KOPIERA OCH LÄGG TILL FLER OBJEKT HÄR -->
+       <div class="card">
+        <img src="bilder/flaskor.jpg" alt="flaskor" />
+        <div class="card-content">
+          <h2>flaskor</h2>
+          <div class="price">250 kr</div>
+          <p>Vakra gamla flaskor i olika former och färger. 
+            Perfekta för dekoration eller samling.</p>
+          <div class="status">Status: Till salu</div>
+        </div>
+      </div>
+      <!-- KOPIERA OCH LÄGG TILL FLER OBJEKT HÄR -->
+      <div class="card">
+        <img src="bilder/kaffekvarn.jpg" alt="kaffekvarn" />
+        <div class="card-content">
+          <h2>flaskor</h2>
+          <div class="price">100 kr</div>
+          <p>Gammal kaffekvarn av okänd ursprung. 
+            En kuriosa för samlare.
+          <div class="status">Status: Till salu</div>
+        </div>
+      </div>
+            <!-- KOPIERA OCH LÄGG TILL FLER OBJEKT HÄR -->
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 – Privat loppis</p>
+  </footer>
+</body>
+</html>
